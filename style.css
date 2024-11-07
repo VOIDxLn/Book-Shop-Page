@@ -1,0 +1,65 @@
+.libros img {
+    transition: all 300ms;
+}
+
+
+.libros img:hover{
+    transform: scale(1.15);
+}
+
+.map {
+    position: relative;
+}
+
+.formContact {
+    position: absolute;
+    width: 650px;
+    height: 550px;
+    background-color:lightblue;
+    left: 45%;
+    top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: opx 4px 15px rgb(0,0,0,0.1);
+    display: flex; /* Centrar el contenido usando flexbox */
+    justify-content: center; /*Centrar horizontalmente */
+    align-items: center; /* Centrar Verticalmente */
+}
+
+.tituloRegistro {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"]{
+    width: 50%;
+    padding-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"]{
+    background-color:darkcyan;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color:dodgerblue
+}
+

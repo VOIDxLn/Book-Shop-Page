@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="C:\Users\juand\OneDrive\Documentos\Vs Code\Politecnico PIO\Css\taller Boostrap\style.css">
+</head>
+<body>
+  <!-- navbar -->
+
+  <div class="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Magic Books</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="C:\Users\juand\OneDrive\Documentos\Vs Code\Politecnico PIO\Css\taller Boostrap\index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="C:\Users\juand\OneDrive\Documentos\Vs Code\Politecnico PIO\Css\taller Boostrap\index.html#MasVendidos">Libros</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categoria
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="C:\Users\juand\OneDrive\Documentos\Vs Code\Politecnico PIO\Css\taller Boostrap\html links\terror\terror.html">Terror</a></li>
+                <li><a class="dropdown-item" href="C:\Users\juand\OneDrive\Documentos\Vs Code\Politecnico PIO\Css\taller Boostrap\html links\ciencia Ficcion\Ciencia_Ficcion.html">Ciencia Ficcion</a></li>
+                <li><a class="dropdown-item" href="C:\Users\juand\OneDrive\Documentos\Vs Code\Politecnico PIO\Css\taller Boostrap\html links\Romance\Romance.html">Romance</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="C:\Users\juand\OneDrive\Documentos\Vs Code\Politecnico PIO\Css\taller Boostrap\html links\Otros\Otro.html">Otros</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dropdown-item" href="./contacto.html" tabindex="-1" aria-disabled="true">Contactos</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <!-- Map -->
+  <div class="map"> 
+    <div class="formContact">
+      <div class="container">
+        <h2 class="tituloRegistro">Se el Primero en Saber</h2>
+        <p>Registra tu correo para enviarte informacion relevante y se el primero en tener novedades.</p>
+        <form class="ingreso">
+          <label for="name">Nombre: </label>
+          <input type="text" name="name" id="name" placeholder="Ingresa tu Nombre Completo por favor." required>
+          <label for="email">Email: </label>
+          <input type="email" name="email" id="email" placeholder="Correo Electronico." required>
+          <label for="phone">Telefono: </label>
+          <input type="number" name="phone" id="phone" placeholder="Ingresa tu numero telefonico por favor." required>
+          <label for="sexo">Genero:</label>
+          <input type="radio" name="sexo" id="sexo" value="fem">Femenino
+          <input type="radio" name="sexo" id="sexo" value="mas">Masculino
+          <input type="radio" name="sexo" id="sexo" value="otro">Otro
+          <label>Algun comentario:</label>
+          <textarea name="comment" id="comment" cols="40" rows="3" placeholder="Si tienes algun comentario o sugerencia por favor compartela con nosotros."></textarea>
+          <br>
+          <input type="submit" value="Enviar">
+        </form>
+      </div>
+    </div>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container text-right">
+        <h2 class="display-4">Ubicacion</h2><br>
+        <p>
+          Parque Céspedes - Entre las Carreras 27 y 28 y Calles 26 y 27. <br>
+          Tuluá, Valle del Cauca <br>
+          Telefono: 22259147
+        </p>
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d608.918312179569!2d-76.19600274658806!3d4.084569916964704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e39c5c68201c247%3A0xd706aecd5a73d1cc!2sBiblioteca%20P%C3%BAblica%20Municipal%20%22Daniel%20Potes%20Lozano%22!5e0!3m2!1ses!2sco!4v1730907641416!5m2!1ses!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <br><br><br><br><br>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Magic Books
+          </h6>
+          <p>
+            Envios a nivel nacional, Tienda fisica <br>
+            En la Ciudad de Tulua Valle del Cauca Colombia.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Servicios
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Tienda Online</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Envios Nacionales</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Al por mayor</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Compra - Venta</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Adicional
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Precios</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Opciones</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Otros</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Ayuda</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contactos</h6>
+          <p><i class="fas fa-home me-3"></i> Magic Books </p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            @gamic.books
+          </p>
+          <p><i class="fas fa-phone me-3"></i>magicbooks@gmail.com</p>
+          <p><i class="fas fa-print me-3"></i> + 57 22259147</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="bg-body-tertiary text-center">
+    <!-- Grid container -->
+    <div class="container p-4"></div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 Copyright: Magic Books
+      <a class="text-body" href="C:\Users\juand\OneDrive\Documentos\Vs Code\Politecnico PIO\Css\taller Boostrap\index.html">| MagicBooks.com |</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
