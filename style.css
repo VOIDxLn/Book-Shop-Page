@@ -1,3 +1,67 @@
+
+.navbar {
+    position: sticky;
+    background-color: #b9e1ab;
+    width: 100%;
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    transition: all 0.5s ease;
+    z-index: 1050;
+}
+
+
+.navbarBusqueda {
+    position: sticky;
+    width: 100%;
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    transition: all 0.5s ease;
+    z-index: 1050;
+}
+
+
+
+.container.fluid {
+    padding: 0;
+}
+
+.backBusqueda {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/library\ background.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.navbar.active {
+    background: #fff;
+    padding: 15px;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    color: #000;
+    font-weight: 100;
+}
+
+.navbar-collapse {
+    display: flex;
+}
+
+
+.scrol{
+    height: 100px;
+}
+
 .libros img {
     transition: all 300ms;
 }
@@ -6,6 +70,8 @@
 .libros img:hover{
     transform: scale(1.15);
 }
+
+/* Css Pagina Contactos */
 
 .map {
     position: relative;
@@ -50,7 +116,7 @@ input[type="number"]{
     border-radius: 4px;
 }
 
-input[type="submit"]{
+.btnEnviar {
     background-color:darkcyan;
     color: white;
     padding: 10px 20px;
@@ -59,7 +125,94 @@ input[type="submit"]{
     cursor: pointer;
 }
 
-input[type="submit"]:hover{
+.btnEnviar:hover{
     background-color:dodgerblue
 }
 
+/* Botones buscar ingresar en navbar*/
+
+.btnSearchLogin {
+    margin: 2px;    
+}
+
+#btnBusqueda{
+    margin-left: 5px;
+}
+
+#btnIngresoRegistro {
+    margin-left: 5px;
+}
+
+
+/*JavaScript Filtro Buscar Libro */
+
+.BusquedaLibros {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Crea 4 columnas de igual ancho */
+    gap: 20px; /* Espacio entre las figuras */
+    text-align: center;
+}
+  
+.BusquedaDeLibro img {
+    width: auto; /* Ajusta el ancho de las imágenes al contenedor */
+    height: 200px;
+}
+
+.BusquedaDeLibro {
+    background-color: #fff;
+    transition: all 0.3s ease-out;
+}
+
+.BusquedaDeLibro figcaption {
+    padding: 1rem;
+}
+
+/* Implementacion javascript */
+
+.filter {
+    visibility: hidden;
+    opacity: 0;
+    order: 1;
+}
+
+.resultadoBusqueda {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+
+.filtroBusqueda {
+    width: 30%;
+    margin-top: 20px;
+    margin-bottom: 5%;
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color:#e5f3f0;
+    border: 2px solid rgb(89,178,185);
+    padding: 0.3rem;
+    outline: none;
+}
+
+.outputBusqueda {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.outputBusqueda span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.outputBusqueda span::before {
+    content: '“';
+    position: relative;
+    left: 1px;
+}
+
+.outputBusqueda span::after {
+    content: '”';
+    position: relative;
+    right: 1px;
+}

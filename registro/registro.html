@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="registro.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Registrate</h1>
+        <form class="registro">
+
+            <div class="input-line">
+
+                <h1>Registrate</h1>
+
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" placeholder="Ingrese su Nombre." required class="input-field">
+
+                <labe>Apellido</labe>
+                <input type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido." required
+                    class="input-field">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Escriba su email." required
+                    class="input-field">
+                <span id="emailError" class="error hidden">Correo Electronico no valido.</span>
+
+                <label for="pass">Contraseña</label>
+
+                <div class="inputPass">
+
+                    <input type="password" name="pass" id="pass" placeholder="Ingrese su contraseña." required class="InPass">
+                    <i class='bx bx-show-alt' id="bx-pass"></i>
+                </div>
+
+                <label for="Confirm-pass">Confirmar Contraseña</label>
+                <div class="inputPass">
+
+                    <input type="password" name="ConfirmPass" id="ConfirmPass" placeholder="Confirme su contraseña." required class="InPass">
+                    <i class='bx bx-show-alt' id="confirm-bx"></i>
+                </div>
+                
+
+                <div class="opciones">
+                    <label class="genero">Genero:</label>
+                    <input type="radio" name="sexo" id="sexo" value="fem" class="genero">Femenino
+                    <input type="radio" name="sexo" id="sexo" value="mas" class="genero">Masculino
+                    <input type="radio" name="sexo" id="sexo" value="otro" class="genero">Otro
+                    <br>
+                    <br>
+
+                    <label>Desea recibir informacion relevante a traves de correo electronico?:</label>
+                    <input type="checkbox" name="info" id="info" value="si">Si
+                    <input type="checkbox" name="info" id="info" value="no">No
+
+                    <br>
+                    <br>
+                    <label>Aceptar terminos y condiciones:</label>
+                    <input type="checkbox" name="terminos" id="terminos" value="si" required class="terminos">Si
+                </div>
+
+                <input type="submit" value="Registrarse" class="FormButtom" id="FormButtom">
+                
+                <div>
+                    <a href="./ingresar/ingresar.html" class="IngresaBtn">
+                        Ya tienes Cuenta? Ingresa
+                    </a>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+
+
+    <script src="C:\Users\juand\OneDrive\Documentos\Vs Code\Politecnico PIO\Css\taller Boostrap\script.js"></script>
+</body>
+
+</html>

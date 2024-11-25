@@ -1,0 +1,126 @@
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#b9e1ab;
+}
+
+.registro {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin-top:0%;
+    padding: 1rem 3rem;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 16px rgba(0,0,0,0.2);
+}
+
+.input-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-field {
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 1.2rem;
+    height: 35px;
+    border: 1px solid rgba(0,0,0,0.2);
+    background-color: #f2f2f2;
+    padding: 0 0.5rem;
+    outline: none;
+}
+
+.input-field::placeholder{
+    opacity: 0.2;
+}
+
+.opciones{
+    justify-items: center;
+    align-items: center;
+}
+
+
+.FormButtom{
+    text-decoration: none;
+    margin: auto;
+    margin-top: 30px;
+    width: calc(300px + 1rem);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    color: #f2f2f2;
+    border: none;
+    background-color: #679558;
+    margin-bottom: 1rem;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.FormButtom:hover{ 
+    background-color:#637c5b;
+    color: #f2f2f2;
+}
+
+
+
+.IngresaBtn {
+    text-decoration: none;
+    margin: auto;
+    width: calc(300px + 1rem);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    color: #f2f2f2;
+    border: none;
+    background-color: #679558;
+    margin-bottom: 1rem;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.IngresaBtn:hover{
+    background-color:#637c5b;
+    color: #f2f2f2;
+    
+}
+
+
+.InPass {
+
+    margin-top: 0.5rem;
+    margin-bottom: 1.2rem;
+    height: 35px;
+    border: 1px solid rgba(0,0,0,0.2);
+    background-color: #f2f2f2;
+    padding: 0 0.5rem;
+    outline: none;
+}
+
+.InPass::placeholder {
+    opacity: 0.2;
+}
+
+/*Mostrar contraseña:*/
+
+.bx {
+    font-size: 20px;
+    transform: tranlateX(-35px);
+    cursor: pointer;
+}

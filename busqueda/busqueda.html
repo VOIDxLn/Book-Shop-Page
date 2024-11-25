@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MagicBooks</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="C:\Users\juand\OneDrive\Documentos\Vs Code\Politecnico PIO\Css\taller Boostrap\style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+
+    <header class="backBusqueda">
+        <div class="navbarBusqueda">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Magic Books</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                    href="C:\Users\juand\OneDrive\Documentos\Vs Code\Politecnico PIO\Css\taller Boostrap\index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#tituloEncuentraTuLibro">Libros</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Categoria
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="C:\Users\juand\OneDrive\Documentos\Vs Code\Politecnico PIO\Css\taller Boostrap\html links\terror\terror.html">Terror</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="C:\Users\juand\OneDrive\Documentos\Vs Code\Politecnico PIO\Css\taller Boostrap\html links\ciencia Ficcion\Ciencia_Ficcion.html">Ciencia Ficcion</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="C:\Users\juand\OneDrive\Documentos\Vs Code\Politecnico PIO\Css\taller Boostrap\html links\Romance\Romance.html">Romance</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="C:\Users\juand\OneDrive\Documentos\Vs Code\Politecnico PIO\Css\taller Boostrap\html links\Otros\Otro.html">Otros</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-item"
+                                    href="C:\Users\juand\OneDrive\Documentos\Vs Code\Politecnico PIO\Css\taller Boostrap\Contacto\contacto.html"
+                                    tabindex="-1" aria-disabled="true">Contactos</a>
+                            </li>
+                        </ul>
+                        <div class="btnSearchLogin">
+                            <a href="C:\Users\juand\OneDrive\Documentos\Vs Code\Politecnico PIO\Css\taller Boostrap\busqueda\busqueda.html">
+                              <button class="btn btn-outline-success" id="btnBusqueda" type="submit">Buscar Libro</button>
+                            </a>
+                        </div>
+                        <div class="btnSearchLogin">
+                            <a href="C:\Users\juand\OneDrive\Documentos\Vs Code\Politecnico PIO\Css\taller Boostrap\registro\ingresar\ingresar.html">
+                              <button class="btn btn-outline-success" id="btnIngresoRegistro" type="submit">Ingresar</button>
+                            </a>
+                        </div> 
+                    </div>
+                </div>
+            </nav>
+            <div class="scrol">
+            </div>
+        </div>
+    </header>
+
+    <br>
+    <h1 id="tituloEncuentraTuLibro">
+        Encuentra tu Libro Deseado..
+    </h1>
+    <br>
+    <div class="resultadoBusqueda">
+        <input type="search" id="inputBusqueda" class="filtroBusqueda" placeholder="Busca tu Libro...">
+        <p class="outputBusqueda">Resultado: <span class="outputBusqueda" id="resultadoBusqueda"></span></p>
+    </div>
+    <!-- Busqueda -->
+ 
+
+
+
+    <!-- Locales / Primera seccion -->
+    <div class="libros">
+
+
+        <!-- PRUEBA IMPLEMENTACION DE BUSCADOR -->
+
+        <!-- PRUEBA -->
+
+        <article class="BusquedaLibros">
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/1984 Caratula.png" alt="jurasico" width="auto" height="200">
+                <figcaption>1984</figcaption>
+            </figure>
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/Alice in Wonderland Caratula.png" alt="chainsaw" width="auto" height="200">
+                <figcaption>Alicia en el Pais <br> de las Maravillas</figcaption>
+            </figure>
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/Amazing Spiderman Caratula.jpeg" alt="chainsaw" width="auto" height="200">
+                <figcaption>The Amaizing Spiderman</figcaption>
+            </figure>
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/Amor en Tiempos de Colera Caratula.png" alt="chainsaw" width="auto"
+                    height="200">
+                <figcaption>Amor en Tiempos <br> de Colera</figcaption>
+            </figure>
+
+
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/Bajo la Misma Estrella Caratula.png" alt="chainsaw" width="auto" height="200">
+                <figcaption>Bajo la Misma <br> Estrella</figcaption>
+            </figure>
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/Berserk Caratula.png" alt="chainsaw" width="auto" height="200">
+                <figcaption>Berserk</figcaption>
+            </figure>
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/chainsaw man caratula.jpg" alt="chainsaw" width="auto" height="200">
+                <figcaption>Chainsaw Man</figcaption>
+            </figure>
+
+
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/Cherry Blosooms Caratula.png" alt="jurasico" width="auto" height="200">
+                <figcaption>Cherry Blosooms</figcaption>
+            </figure>
+
+            <figure class="BusquedaDeLibro">
+                <img src=".//img catalogos/Color q Cayo del Cielo Lovecraft Caratula.png" alt="chainsaw" width="auto"
+                    height="200">
+                <figcaption>El Color que cayo<br> del Cielo</figcaption>
+            </figure>
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/Comic Batman Caratula.jpg" alt="chainsaw" width="auto" height="200">
+                <figcaption>Batman Nro. 50</figcaption>
+            </figure>
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/Cthulhu Caratula.png" alt="chainsaw" width="auto" height="200">
+                <figcaption>La llamada de <br> Cthulhu</figcaption>
+            </figure>
+
+
+
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/Dracula caratula.jpeg" alt="jurasico" width="auto" height="200">
+                <figcaption>Dracula</figcaption>
+            </figure>
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/Dune Caratula.jpeg" alt="chainsaw" width="auto" height="200">
+                <figcaption>Dune</figcaption>
+            </figure>
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/El amor las mujeres y la vida Caratula.png" alt="chainsaw" width="auto"
+                    height="200">
+                <figcaption>El amor, las <br> mujeres y la vida</figcaption>
+            </figure>
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/El Arte de Ser Nosotros Caratula.png" alt="chainsaw" width="auto"
+                    height="200">
+                <figcaption>El Arte de ser <br> Nosotros</figcaption>
+            </figure>
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/El club de las 5 am Caratula.jpeg" alt="chainsaw" width="auto" height="200">
+                <figcaption>El Club de <br> las 5 am</figcaption>
+            </figure>
+
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/El cuervo Caratula.jpeg" alt="chainsaw" width="auto" height="200">
+                <figcaption>El Cuervo</figcaption>
+            </figure>
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/El mesias de Dune Caratula.png" alt="chainsaw" width="auto" height="200">
+                <figcaption>El Mesias <br> de Dune</figcaption>
+            </figure>
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/El mundo Perdido Caratula.jpeg" alt="chainsaw" width="auto" height="200">
+                <figcaption>El Mundo Perdido</figcaption>
+            </figure>
+
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/El principito caratula.jpeg" alt="chainsaw" width="auto" height="200">
+                <figcaption>El Principito</figcaption>
+            </figure>
+
+            <figure class="BusquedaDeLibro">
+                <img src=".//img catalogos/El problema de los tres cuerpos Caratula.png" alt="chainsaw" width="auto"
+                    height="200">
+                <figcaption>El Problema de <br> los Tres Cuerpos</figcaption>
+            </figure>
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/En las Montañas de la Locura Caratula.jpeg" alt="chainsaw" width="auto"
+                    height="200">
+                <figcaption>En las Montañas <br> de la Locura</figcaption>
+            </figure>
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/Frankestein Caratula.jpg" alt="chainsaw" width="auto" height="200">
+                <figcaption>Frankestein</figcaption>
+            </figure>
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/Gantz-E caratula.jpeg" alt="chainsaw" width="auto" height="200">
+                <figcaption>Gantz-E</figcaption>
+            </figure>
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/Habitos atomicos Caratula.jpg" alt="chainsaw" width="auto" height="200">
+                <figcaption>Habitos Atomicos</figcaption>
+            </figure>
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/Harry poter camara secreta Caratula.png" alt="chainsaw" width="auto"
+                    height="200">
+                <figcaption>Harry Potter y la <br> Camara Secreta</figcaption>
+            </figure>
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/Hyperion Caratula.jpeg" alt="chainsaw" width="auto" height="200">
+                <figcaption>Hyperion</figcaption>
+            </figure>
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/Jujutsu Kaisen Caratula.jpeg" alt="chainsaw" width="auto" height="200">
+                <figcaption>Jujutsu Kaisen</figcaption>
+            </figure>
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/La guerra de los Mundos Caratula.jpg" alt="chainsaw" width="auto"
+                    height="200">
+                <figcaption>La Guerra de <br> los Mundos</figcaption>
+            </figure>
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/La Odisea.png" alt="chainsaw" width="auto" height="200">
+                <figcaption>La Odisea</figcaption>
+            </figure>
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/La vuelta al Mundo Caratula.png" alt="chainsaw" width="auto" height="200">
+                <figcaption>La Vuelta al Mundo <br> en 80 Dias</figcaption>
+            </figure>
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/Metro 2033 Caratula.jpg" alt="chainsaw" width="auto" height="200">
+                <figcaption>Metro 2033</figcaption>
+            </figure>
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/Orgullo y Prejuicio Caratula.jpeg" alt="chainsaw" width="auto" height="200">
+                <figcaption>Orgullo y <br> Prejuicio</figcaption>
+            </figure>
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/Parque jurasico caratula.jpeg" alt="chainsaw" width="auto" height="200">
+                <figcaption>Parque Jurasico</figcaption>
+            </figure>
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/Pet Sementery Caratula.jpg" alt="chainsaw" width="auto" height="200">
+                <figcaption>Sementerio de <br> Animales</figcaption>
+            </figure>
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/pun pun caratula.jpg" alt="chainsaw" width="auto" height="200">
+                <figcaption>Buenas Noches <br> Pun Pun</figcaption>
+            </figure>
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/Resplandor Caratula.jpeg" alt="chainsaw" width="auto" height="200">
+                <figcaption>El Resplandor</figcaption>
+            </figure>
+
+            <figure class="BusquedaDeLibro">
+                <img src="./img catalogos/Soy Leyenda Caratula.png" alt="chainsaw" width="auto" height="200">
+                <figcaption>Soy Leyenda</figcaption>
+            </figure>
+
+        </article>
+
+
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./textoBusqueda.js"></script>
+</body>
+
+</html>
